@@ -7,7 +7,7 @@
     "start": "moleculer-runner",
     "deps": "npm-check -u",
     "ci": "jest --watch",
-    "test": "jest --coverage",
+    "test": "jest  --coverage",
     "lint": "eslint services",
     "docker:build": "docker build -t conduit ."
   },
@@ -42,8 +42,6 @@
   "jest": {
     "testEnvironment": "node",
     "rootDir": "./services",
-    "roots": [
-      "../test"
-    ]
+    "testRegex": "(.*test.spec.js?$)"
   }
 }
